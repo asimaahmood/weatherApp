@@ -7,13 +7,13 @@ module.exports = {
     './index.html',
   ],
   theme: {
-    
+    extend: {},
   },
  
   variants: {
     extend: {
       borderColor: ['focus-visible'],
-      opacity: ['disabled'],
+      // opacity: ['disabled'],
     }
   }
 }

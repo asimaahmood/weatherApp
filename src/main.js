@@ -1,24 +1,13 @@
-import './assets/main.css'
+import './assets/main.css';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-// import Vuex from 'vuex'
-// Vue.use(Vuex)
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import NavBar from './components/NavBar.vue';
 
-// const store = new Vuex.Store({
-//     state: {
-//       count: 0
-//     },
-//     mutations: {
-//       increment (state) {
-//         state.count++
-//       }
-//     }
-//   }) 
+const app = createApp(App);
 
-const app = createApp(App)
-
-app.use(router)
-app.mount('#app')
+app.component('nav-bar', NavBar);
+app.use(router);
+app.mount('#app');
 
